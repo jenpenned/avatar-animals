@@ -275,10 +275,18 @@ var size = animal_list.length;
 // console.log(size);
 
 function PickRandomWord(frm) {
-// Generate a random number between 1 and NumberOfWords
+// Generate a random number between 1 and animal_list.length
 var rnd = Math.ceil(Math.random() * size);
 // console.log(animal_list[rnd]);
 
 // Display the word inside the text box
 frm.WordBox.value = animal_list[rnd];
-}
+};
+
+function PickRandomWord_2(frm) {
+// Generate a random number between 1 and animal_list.length
+var rnd2 = Math.ceil(Math.random() * size);
+console.log(animal_list[rnd2]);
+// Display the word inside the text box
+  frm.WordBox_2.value = animal_list[rnd2];
+};
