@@ -1,47 +1,3 @@
-// var NumberOfWords = 28
-//
-// var words = new BuildArray(NumberOfWords)
-//
-// // Use the following variables to
-// // define your random words:
-// words[1] = "escapology"
-// words[2] = "brightwork"
-// words[3] = "verkrampte"
-// words[4] = "protectrix"
-// words[5] = "nudibranch"
-// words[6] = "grandchild"
-// words[7] = "newfangled"
-// words[8] = "flugelhorn"
-// words[9] = "mythologer"
-// words[10] = "pluperfect"
-// words[11] = "jellygraph"
-// words[12] = "quickthorn"
-// words[13] = "rottweiler"
-// words[14] = "technician"
-// words[15] = "cowpuncher"
-// words[16] = "middlebrow"
-// words[17] = "jackhammer"
-// words[18] = "triphthong"
-// words[19] = "wunderkind"
-// words[20] = "dazzlement"
-// words[21] = "jabberwock"
-// words[22] = "witchcraft"
-// words[23] = "pawnbroker"
-// words[24] = "thumbprint"
-// words[25] = "motorcycle"
-// words[26] = "cryptogram"
-// words[27] = "torchlight"
-// words[28] = "bankruptcy"
-//
-// function BuildArray(size){
-// this.length = size
-// for (var i = 1; i <= size; i++){
-// this[i] = null}
-// return this
-// }
-
-// animal list from https://gist.github.com/borlaym/585e2e09dd6abd9b0d0a
-
 var animal_list = [
     "Aardvark",
     "Albatross",
@@ -274,19 +230,28 @@ var size = animal_list.length;
 // console.log(animal_list);
 // console.log(size);
 
-function PickRandomWord(frm) {
-// Generate a random number between 1 and animal_list.length
-var rnd = Math.ceil(Math.random() * size);
-// console.log(animal_list[rnd]);
+function PickRandomWord(frm, frm2) {
+  var rnd = Math.ceil(Math.random() * size);
+  frm.WordBox.value = animal_list[rnd];
 
-// Display the word inside the text box
-frm.WordBox.value = animal_list[rnd];
-};
+  var rnd2 = Math.ceil(Math.random() * size);
+  frm2.WordBox_2.value = animal_list[rnd2];
 
-function PickRandomWord_2(frm) {
-// Generate a random number between 1 and animal_list.length
-var rnd2 = Math.ceil(Math.random() * size);
-console.log(animal_list[rnd2]);
-// Display the word inside the text box
-  frm.WordBox_2.value = animal_list[rnd2];
-};
+}
+
+// function PickRandomWord(frm) {
+// // Generate a random number between 1 and animal_list.length
+// var rnd = Math.ceil(Math.random() * size);
+// // console.log(animal_list[rnd]);
+//
+// // Display the word inside the text box
+// frm.WordBox.value = animal_list[rnd];
+// };
+//
+// function PickRandomWord_2(frm) {
+// // Generate a random number between 1 and animal_list.length
+// var rnd2 = Math.ceil(Math.random() * size);
+// console.log(animal_list[rnd2]);
+// // Display the word inside the text box
+//   frm.WordBox_2.value = animal_list[rnd2];
+// };
