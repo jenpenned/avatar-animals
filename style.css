@@ -1,6 +1,6 @@
 body {
   font-family: 'Tillana', cursive;
-  margin: 0 auto;
+  margin: 0 2vw;
   max-width: 960px;
   padding: 40px 10px;
   line-height: 1.65em;
@@ -53,6 +53,35 @@ form {
   display: flex;
   flex-wrap: nowrap;
   justify-content: center;
+}
+
+.flex-turtleduck {
+  display: flex;
+  width: 100%;
+}
+
+img {
+  width: 60%;
+}
+p.speech-bubble {
+  position: relative;
+  background: #c0ea71;
+  border-radius: .4em;
+  width: 40%;
+}
+p.speech-bubble:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 0;
+  height: 0;
+  border: 28px solid transparent;
+  border-right-color: #c0ea71;
+  border-left: 0;
+  border-bottom: 0;
+  margin-top: -14px;
+  margin-left: -28px;
 }
 
 @media screen and (max-width: 955px) {
