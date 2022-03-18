@@ -3,10 +3,13 @@ body {
   margin: 0 2vw;
   max-width: 960px;
   padding: 40px 10px;
-  line-height: 1.65em;
   background: #f8faf8;
   color: #fff;
   font-weight: 300;
+}
+
+.content {
+  margin: 0 20vw;
 }
 
 h1 {
@@ -14,6 +17,7 @@ h1 {
   text-align: center;
   margin: 20% 0 5% 0;
   color: black;
+  line-height: 74px;
 }
 
 form {
