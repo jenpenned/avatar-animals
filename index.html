@@ -1,10 +1,17 @@
 <!DOCTYPE html>
 <html>
   <head>
+    /* link to css stylesheets and fonts here
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tillana:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+<title>Avatar Animal Generator</title>
+
   </head>
 
 <body>
@@ -13,16 +20,22 @@
   <div class ='content'>
     <div class="flex-turtleduck">
       <img src="assets/turtleduck.png" alt = 'illustration of a turtleduck'>
-      <p class="speech-bubble"> texty text text </p>
+      <p class="speech-bubble"> Draw me some friends! Click on the buttons below to choose your animal combo.</p>
     </div>
   <div class="container">
     <FORM NAME="WordForm">
       <INPUT TYPE=BUTTON VALUE="First Animal" onClick="PickRandomWord(document.WordForm);" id="button">
-      <INPUT TYPE=TEXT NAME="WordBox" id="wordbox"><BR>
+        <label>
+          contains first animal in animal combo
+          <INPUT TYPE=TEXT NAME="WordBox" id="wordbox"><BR>
+        </label>
     </FORM>
     <FORM NAME="WordForm_2">
       <INPUT TYPE=BUTTON VALUE="Second Animal" onClick="PickRandomWord_2(document.WordForm_2);" id="button">
-      <INPUT TYPE=TEXT NAME="WordBox_2" id="wordbox"><BR>
+        <label>
+          contains second animal in animal combo
+          <INPUT TYPE=TEXT NAME="WordBox_2" id="wordbox"><BR>
+        </label>
     </FORM>
   </div>
 </body>
