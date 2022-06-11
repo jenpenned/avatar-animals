@@ -161,6 +161,18 @@ var animal_list = [
     "Zebra"
 ];
 
+// find longest words in array to determine max-width of wordbox
+
+var length = Array.from(animal_list, animal => [animal, animal.length])
+
+console.log(length);
+
+length.sort(function (a, b) {
+  return b[1] - a[1];
+})
+
+//hippopotamus Caterpillar is the longest combo
+
 var size = animal_list.length;
 
 // console.log(animal_list);
